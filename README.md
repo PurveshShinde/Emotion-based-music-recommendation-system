@@ -33,15 +33,20 @@ This application detects a user’s facial emotion using real-time webcam input 
 
 ## 📁 Project Structure
 
-app.py
-requirements.txt
-muse_v3.csv
-model.h5
-haarcascade_frontalface_default.xml
-assets/
-main_ui.png
-emotion_scan.png
-result_songs.png
+Emotion-based-music-recommendation-system/
+│
+├── app.py
+├── requirements.txt
+├── muse_v3.csv
+├── model.h5
+├── haarcascade_frontalface_default.xml
+│
+└── assets/
+├── main.png
+├── scan.png
+└── output.png
+
+— this is the version you should paste into your README.
 
 ---
 
