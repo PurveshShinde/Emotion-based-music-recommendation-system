@@ -1,81 +1,104 @@
-🎶 Emotion-Based Music Recommendation System
+# Emotion-Based Music Recommendation System 🎶
 
-This project detects a user’s facial emotion using a CNN model and recommends music accordingly. It uses:
+This project captures a user's facial emotion using a live camera feed and recommends music that matches their emotional state. It uses a trained CNN model for emotion classification and a tagged dataset for emotion-driven song suggestions.
 
-Real-time face detection via Haar Cascade
+---
 
-Emotion classification using trained CNN model (model.h5)
+## Features
 
-A curated emotion-tagged music dataset (muse_v3.csv)
+- Real-time face detection using Haar Cascade
+- CNN-based facial emotion prediction
+- Five-category emotion-to-music mapping
+- Streamlit frontend UI
+- Efficient caching for performance
 
-Streamlit frontend UI
+---
 
-Camera-based live inference
+## Project Structure
 
-📂 Project Structure
-.
-│ app.py
-│ requirements.txt
-│ model.h5
-│ muse_v3.csv
-│ haarcascade_frontalface_default.xml
+app.py
+muse_v3.csv
+model.h5
+haarcascade_frontalface_default.xml
+requirements.txt
 
-🧠 How it Works (Core Logic)
+yaml
+Copy code
 
-Camera captures user face frames
+---
 
-Haar classifier detects face region
+## Setup Instructions
 
-CNN model predicts emotion from face
+### 1. Create virtual environment
 
-Detected emotions are tallied
+#### Windows
 
-Music entries are selected from dataset based on emotion category
-
-Output is clickable song links
-
-The main execution logic is in app.py, e.g. the emotion-scanner UI loop and recommendation generation.
-
-app
-
-The required dependencies are listed in requirements.txt:
-
-requirements
-
-🚀 Setup & Running the Project
-1️⃣ Create Virtual Environment
-Windows (CMD / PowerShell)
+```bash
 python -m venv venv
-
 macOS / Linux
+bash
+Copy code
 python3 -m venv venv
-
-2️⃣ Activate the Environment
-Windows:
+2. Activate the environment
+Windows
+bash
+Copy code
 venv\Scripts\activate
-
-macOS / Linux:
+macOS / Linux
+bash
+Copy code
 source venv/bin/activate
-
-3️⃣ Install Dependencies
+3. Install dependencies
+bash
+Copy code
 pip install -r requirements.txt
-
-Contains packages like streamlit, opencv-python-headless, tensorflow, etc.
-
-requirements
-
-4️⃣ Run the Application
+4. Run the application
+bash
+Copy code
 streamlit run app.py
+Streamlit will display a URL (e.g., http://localhost:8501).
+Open it in a browser.
 
-Once launched — click SCAN MY EMOTION and grant camera access.
+Camera Usage
+Click:
 
-📸 Requirements for Execution
+java
+Copy code
+📸 SCAN MY EMOTION (Start Camera)
+Grant webcam access, wait for scanning, and generated song suggestions will display.
 
-Webcam access
+Git Ignore Setup
+Create a file named:
 
-Python 3.8–3.11
+Copy code
+.gitignore
+Add:
 
-TensorFlow & OpenCV installed
+Copy code
+venv/
+.venv/
+If already committed earlier:
 
-Model & XML cascade are in the same project directory
-(model.h5, haarcascade_frontalface_default.xml)
+bash
+Copy code
+git rm -r --cached venv
+git rm -r --cached .venv
+git commit -m "Removed venv from repo"
+Requirements
+Python 3.8+
+
+Webcam
+
+TensorFlow & OpenCV installed via requirements.txt
+
+Internet connection for clicking song links
+
+Summary
+This is an AI-powered real-time affective-computing system that:
+
+captures facial expressions
+
+interprets emotion
+
+recommends mood-appropriate music
+```
