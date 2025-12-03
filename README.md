@@ -8,15 +8,15 @@ This application detects a user’s facial emotion using real-time webcam input 
 
 ### App Home UI
 
-![Main UI](assets/main_ui.png)
+![Main UI](assets/main.png)
 
 ### Emotion Detection (Camera Active)
 
-![Emotion Scan](assets/emotion_scan.png)
+![Emotion Scan](assets/scan.png)
 
 ### Music Recommendation Output
 
-![Recommended Songs](assets/result_songs.png)
+![Recommended Songs](assets/output.png)
 
 ---
 
