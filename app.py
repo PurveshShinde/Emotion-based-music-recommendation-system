@@ -16,7 +16,7 @@ CONFIG = {
     "MODEL_WEIGHTS_PATH": os.path.join(BASE_DIR, "model.h5"),
     "HAARCASCADE_PATH": os.path.join(BASE_DIR, "haarcascade_frontalface_default.xml"),
     "FRAME_LIMIT": 20,
-}
+} # paste your own paths if needed
 
 # Emotion Mapping for the Model
 EMOTION_DICT = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Neutral", 5: "Sad", 6: "Surprised"}
