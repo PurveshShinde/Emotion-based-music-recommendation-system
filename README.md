@@ -63,9 +63,8 @@ Emotion-based-music-recommendation-system/
     ├── main_ui.png
     ├── scan.png
     └── output.png
+```
 
----
- 
 🛠️ Tech Stack
 
 Language: Python 3.8+
@@ -82,6 +81,7 @@ Data Handling: Pandas, NumPy
 1️⃣ Clone the Repository
 git clone https://github.com/PurveshShinde/Emotion-based-music-recommendation-system.git
 cd Emotion-based-music-recommendation-system
+
 2️⃣ Create a Virtual Environment (Recommended)
 
 Windows
@@ -128,7 +128,7 @@ Common Issues
 
 Webcam not opening
 
-Ensure no other apps (Zoom, Teams) are using the camera.
+Ensure no other applications (Zoom, Teams) are using the webcam.
 
 Model file not found
 
@@ -136,7 +136,7 @@ Confirm model.h5 and haarcascade_frontalface_default.xml are in the root directo
 
 Slow first run
 
-TensorFlow may take time to load the model initially.
+TensorFlow may take extra time to load the model initially.
 
 🏁 Summary
 
@@ -153,7 +153,7 @@ Real-time interactive web experience
 🎓 Ideal for:
 AI/ML coursework, Computer Vision demos, Human–Computer Interaction (HCI), and portfolio projects.
 
-📌 Future Improvements (Optional)
+📌 Future Improvements
 
 Spotify / YouTube API integration
 
@@ -162,14 +162,3 @@ Emotion confidence visualization
 Mobile-friendly UI
 
 Model optimization for faster inference
-
-⭐ If you like this project, consider giving it a star!
-
----
-
-If you want next:
-- 🔹 **README badge section (Python, Streamlit, ML)**  
-- 🔹 **Deployment section (Streamlit Cloud URL)**  
-- 🔹 **Resume-optimized short README**
-
-Just tell me what you want to add.
