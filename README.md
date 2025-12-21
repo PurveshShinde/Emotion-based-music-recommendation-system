@@ -1,48 +1,71 @@
-🎶 Emotion-Based Music Recommendation System
+# 🎶 Emotion-Based Music Recommendation System
 
-An AI-powered web application that detects a user’s facial emotion in real-time using computer vision and deep learning, then recommends a curated music playlist to match their mood.
+An AI-powered web application that detects a user’s **facial emotion in real time** using computer vision and deep learning, then recommends a **curated music playlist** matching the detected mood.
 
-📸 Demo & Screenshots
+This project demonstrates practical **Affective Computing** by combining **OpenCV**, **CNN-based emotion classification**, and a **Streamlit web interface**.
 
-1. App Home UI (assets/main.png)
+---
 
-The clean, minimal interface built with Streamlit.
+## 📸 Demo & Screenshots
 
-2. Emotion Detection (Camera Active) (assets/scan.png)
+### 🏠 App Home UI
+Clean, minimal interface built using Streamlit.
 
-Real-time face detection and emotion classification using OpenCV and CNN.
+![App Home UI](assets/main_ui.png)
 
-3. Music Recommendation Output (assets/output.png)
+---
 
-The system maps the detected emotion to a specific genre/vibes and fetches songs.
+### 📷 Emotion Detection (Camera Active)
+Real-time face detection and emotion classification using OpenCV and a trained CNN model.
 
-✨ Key Features
+![Emotion Detection](assets/scan.png)
 
-Real-time Detection: Uses Haar Cascade for immediate face detection via webcam.
+---
 
-Deep Learning Model: A trained CNN (Convolutional Neural Network) classifies faces into 7 distinct emotions.
+### 🎵 Music Recommendation Output
+Detected emotion is mapped to a mood category and corresponding songs are fetched.
 
-Smart Mapping: Maps emotions to 5 mood categories for optimized song selection.
+![Music Recommendation Output](assets/output.png)
 
-Curated Playlists: Fetches song data efficiently from the muse_v3.csv dataset.
+---
 
-Interactive UI: Fully responsive and interactive interface powered by Streamlit.
+## ✨ Key Features
 
-📁 Project Structure
+- **Real-time Emotion Detection**  
+  Uses Haar Cascade for instant face detection via webcam.
 
+- **Deep Learning Model**  
+  CNN-based classifier categorizes faces into **7 distinct emotions**.
+
+- **Smart Mood Mapping**  
+  Emotions are mapped into **5 mood categories** for better music relevance.
+
+- **Curated Playlists**  
+  Song recommendations are fetched from the `muse_v3.csv` dataset.
+
+- **Interactive Web UI**  
+  Fully responsive Streamlit-based interface.
+
+---
+
+## 📁 Project Structure
+
+```text
 Emotion-based-music-recommendation-system/
 │
-├── app.py # Main Streamlit application entry point
-├── requirements.txt # List of Python dependencies
-├── muse_v3.csv # Dataset containing song metadata
-├── model.h5 # Pre-trained CNN emotion detection model
-├── haarcascade_frontalface_default.xml # OpenCV face detection XML
+├── app.py                         # Main Streamlit application
+├── requirements.txt               # Python dependencies
+├── muse_v3.csv                    # Music dataset
+├── model.h5                       # Pre-trained CNN model
+├── haarcascade_frontalface_default.xml  # OpenCV face detector
 │
-└── assets/ # Images for README documentation
-├── main_ui.png
-├── scan.png
-└── output.png
+└── assets/                        # README screenshots
+    ├── main_ui.png
+    ├── scan.png
+    └── output.png
 
+---
+ 
 🛠️ Tech Stack
 
 Language: Python 3.8+
@@ -55,81 +78,98 @@ Web Framework: Streamlit
 
 Data Handling: Pandas, NumPy
 
-🖥️ Setup & Installation Instructions
-
-Follow these steps to run the project locally.
-
-1. Clone the Repository
-
-git clone [https://github.com/your-username/Emotion-based-music-recommendation-system.git](https://github.com/your-username/Emotion-based-music-recommendation-system.git)
+🖥️ Setup & Installation
+1️⃣ Clone the Repository
+git clone https://github.com/PurveshShinde/Emotion-based-music-recommendation-system.git
 cd Emotion-based-music-recommendation-system
+2️⃣ Create a Virtual Environment (Recommended)
 
-2. Create a Virtual Environment
-
-It is recommended to use a virtual environment to manage dependencies.
-
-For Windows:
+Windows
 
 python -m venv venv
 venv\Scripts\activate
 
-For macOS/Linux:
+
+macOS / Linux
 
 python3 -m venv venv
 source venv/bin/activate
 
-3. Install Dependencies
-
+3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-4. Run the Application
-
+4️⃣ Run the Application
 streamlit run app.py
 
-Once running, the application will be available in your browser at:
-http://localhost:8501
+
+The app will be available at:
+👉 http://localhost:8501
 
 🎥 How to Use
 
-Launch the App: Follow the setup instructions above to start the server.
+Launch the application.
 
-Start Scanning: Click the "📸 SCAN MY EMOTION" button on the sidebar.
+Click 📸 SCAN MY EMOTION from the sidebar.
 
-Grant Permissions: Allow the browser to access your webcam.
+Allow webcam access in the browser.
 
-Hold Still: Look at the camera for a few seconds while the model analyzes your facial features.
+Look at the camera for a few seconds.
 
-Get Recommendations: Once the emotion is captured, the app will display your current mood and a list of recommended songs.
+View detected emotion and recommended songs.
 
 ⚙️ Configuration & Troubleshooting
-
-Git Ignore Setup
-
-To prevent committing unnecessary files (like the virtual environment), ensure your .gitignore contains:
-
+.gitignore (Recommended)
 venv/
 .venv/
-**pycache**/
+__pycache__/
 .DS_Store
 
 Common Issues
 
-Camera not opening: Ensure no other application (Zoom, Teams) is using the webcam.
+Webcam not opening
 
-Model not found: Ensure model.h5 and haarcascade_frontalface_default.xml are in the root directory.
+Ensure no other apps (Zoom, Teams) are using the camera.
 
-Slow Performance: The first run might be slow as TensorFlow loads the model into memory.
+Model file not found
+
+Confirm model.h5 and haarcascade_frontalface_default.xml are in the root directory.
+
+Slow first run
+
+TensorFlow may take time to load the model initially.
 
 🏁 Summary
 
-This project demonstrates practical Affective Computing:
+This project showcases an end-to-end Emotion-Aware Recommendation System:
 
-Captures facial expressions using OpenCV.
+Facial expression capture using OpenCV
 
-Infers emotion using a Deep Learning model.
+Emotion inference via Deep Learning
 
-Maps the result to a curated database.
+Intelligent mood-to-music mapping
 
-Recommends content in a user-friendly UI.
+Real-time interactive web experience
 
-Ideal for AI/ML coursework, Computer Vision research, and HCI (Human-Computer Interaction) demos.
+🎓 Ideal for:
+AI/ML coursework, Computer Vision demos, Human–Computer Interaction (HCI), and portfolio projects.
+
+📌 Future Improvements (Optional)
+
+Spotify / YouTube API integration
+
+Emotion confidence visualization
+
+Mobile-friendly UI
+
+Model optimization for faster inference
+
+⭐ If you like this project, consider giving it a star!
+
+---
+
+If you want next:
+- 🔹 **README badge section (Python, Streamlit, ML)**  
+- 🔹 **Deployment section (Streamlit Cloud URL)**  
+- 🔹 **Resume-optimized short README**
+
+Just tell me what you want to add.
