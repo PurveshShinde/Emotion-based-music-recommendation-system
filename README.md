@@ -11,7 +11,7 @@ This project demonstrates practical **Affective Computing** by combining **OpenC
 ### 🏠 App Home UI
 Clean, minimal interface built using Streamlit.
 
-![App Home UI](assets/main_ui.png)
+![App Home UI](assets/main.png)
 
 ---
 
