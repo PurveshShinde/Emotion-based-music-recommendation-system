@@ -12,10 +12,10 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D
 # ----------------------------------------------------
 # Define paths once for easy updating
 CONFIG = {
-    "DATA_PATH": r"D:\Projects\Emotion-based-music-recommendation-system-main\muse_v3.csv",
-    "MODEL_WEIGHTS_PATH": r'D:\Projects\Emotion-based-music-recommendation-system-main\model.h5',
-    "HAARCASCADE_PATH": r'D:\Projects\Emotion-based-music-recommendation-system-main\haarcascade_frontalface_default.xml',
-    "FRAME_LIMIT": 20, # Number of frames to scan (approx 1 second)
+    "DATA_PATH": os.path.join(BASE_DIR, "muse_v3.csv"),
+    "MODEL_WEIGHTS_PATH": os.path.join(BASE_DIR, "model.h5"),
+    "HAARCASCADE_PATH": os.path.join(BASE_DIR, "haarcascade_frontalface_default.xml"),
+    "FRAME_LIMIT": 20,
 }
 
 # Emotion Mapping for the Model
